@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenfit Bienestar </title>
+    <meta name="description" content="Transformamos el estrés laboral en energía productiva. Consultoría premium de bienestar integral.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F9F8F4',
+                        forest: '#1A3324',
+                        sage: '#E3E8E3',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-cream text-forest font-sans selection:bg-sage">
+
+    <!-- 1. HEADER (Navegación Flotante) -->
+    <header class="fixed top-0 w-full z-50 glass-header border-b border-forest/5">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-serif text-xl font-bold tracking-tight">
+                Greenfit Bienestar
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#filosofia" class="text-sm uppercase tracking-widest hover:opacity-60 transition">Filosofía</a>
+                <a href="#servicios" class="text-sm uppercase tracking-widest hover:opacity-60 transition">Servicios</a>
+                <div class="flex items-center gap-4 border-l border-forest/20 pl-8">
+                    <a href="https://instagram.com" target="_blank" class="hover:scale-110 transition">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://wa.me/+56956275739" class="bg-forest text-cream px-6 py-2.5 rounded-full text-sm font-medium hover:bg-opacity-90 transition shadow-lg shadow-forest/10">
+                        Agendar Asesoría
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- 2. HERO SECTION -->
+        <section id="hero" class="min-h-[85vh] flex flex-col items-center justify-center text-center px-6 py-20">
+            <div class="reveal">
+                <span class="uppercase tracking-[0.3em] text-xs mb-6 block font-medium opacity-70">Elevating Corporate Standards</span>
+                <h1 class="font-serif text-5xl md:text-8xl mb-8 leading-tight">
+                    Pausa. Respira. <br> <span class="italic text-forest/80 font-light">Rinde.</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-forest/70 font-light leading-relaxed mb-12">
+                    Transformamos el estrés laboral en energía productiva. Optimización humana a través del bienestar integral para empresas y personas de alto rendimiento.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#servicios" class="border border-forest px-10 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-forest hover:text-cream transition duration-500">
+                        Explorar Servicios
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FILOSOFÍA (Manifiesto) -->
+        <section id="filosofia" class="bg-sage/30 py-32 px-6">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <i data-lucide="quote" class="w-10 h-10 mx-auto mb-8 opacity-20"></i>
+                <h2 class="font-serif text-3xl md:text-5xl leading-snug">
+                    "No ofrecemos solo pausas; construimos <span class="italic">ecosistemas de salud</span>. Creemos que el autocuidado es la inversión más rentable para el éxito de tu equipo."
+                </h2>
+                <div class="w-16 h-px bg-forest/30 mx-auto mt-12"></div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICIOS -->
+        <section id="servicios" class="py-32 px-6 max-w-7xl mx-auto">
+            <div class="mb-20 text-center md:text-left reveal">
+                <h3 class="font-serif text-4xl mb-4 text-center">Nuestra Propuesta de Valor</h3>
+                <p class="text-forest/60 max-w-xl mx-auto text-center">Programas diseñados por expertos en neurociencia y bienestar físico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="reveal bg-sage p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="bg-cream w-14 h-14 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-serif text-xl mb-4">Pausas de Activación</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light">
+                        Neuro Gym y masajes en silla para revitalizar el cuerpo y bajar el cortisol en minutos.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="reveal bg-sage p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 group" style="transition-delay: 100ms;">
+                    <div class="bg-cream w-14 h-14 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <i data-lucide="wind" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-serif text-xl mb-4">Mindfulness & Sonoterapia</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light">
+                        Herramientas de respiración y cuencos tibetanos para disipar la ansiedad laboral de raíz.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="reveal bg-sage p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 group" style="transition-delay: 200ms;">
+                    <div class="bg-cream w-14 h-14 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-serif text-xl mb-4">Jornadas de Bienestar</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light">
+                        Experiencias inmersivas de media jornada con yoga, grounding y nutrición consciente.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="reveal bg-sage p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 group" style="transition-delay: 300ms;">
+                    <div class="bg-cream w-14 h-14 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <i data-lucide="brain" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-serif text-xl mb-4">Charlas de Autocuidado</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light">
+                        Neuroliderazgo y psicología positiva aplicadas a la rutina empresarial moderna.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROCESO (Método) -->
+        <section id="proceso" class="py-32 bg-forest text-cream">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3 class="font-serif text-4xl mb-20 reveal">Nuestro Proceso de Optimización</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <!-- Step 1 -->
+                    <div class="reveal">
+                        <div class="text-5xl font-serif opacity-20 mb-6 italic">01</div>
+                        <h5 class="text-xl mb-4 font-medium">Diagnóstico del Entorno</h5>
+                        <p class="opacity-60 text-sm font-light">Analizamos la carga cognitiva y física de tu equipo para crear un plan a medida.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="reveal" style="transition-delay: 150ms;">
+                        <div class="text-5xl font-serif opacity-20 mb-6 italic">02</div>
+                        <h5 class="text-xl mb-4 font-medium">Implementación Activa</h5>
+                        <p class="opacity-60 text-sm font-light">Ejecutamos protocolos de bienestar directamente en tu espacio o de forma inmersiva.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="reveal" style="transition-delay: 300ms;">
+                        <div class="text-5xl font-serif opacity-20 mb-6 italic">03</div>
+                        <h5 class="text-xl mb-4 font-medium">Seguimiento y Resultados</h5>
+                        <p class="opacity-60 text-sm font-light">Medimos el impacto en el clima laboral y la reducción del ausentismo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FOOTER & CTA FINAL -->
+        <footer class="py-32 px-6">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="font-serif text-4xl md:text-6xl mb-12">¿Listo para elevar el estándar de tu equipo?</h2>
+                
+                <a href="https://wa.me/TU_NUMERO_AQUI?text=Hola,%20me%20gustaría%20agendar%20una%20asesoría%20con%20Greenfit%20Bienestar" 
+                   class="inline-flex items-center gap-3 bg-forest text-cream px-12 py-6 rounded-full text-lg font-medium hover:scale-105 transition-transform shadow-2xl shadow-forest/20">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    Agendar Asesoría vía WhatsApp
+                </a>
+
+                <div class="mt-32 pt-12 border-t border-forest/10 flex flex-col md:flex-row justify-between items-center gap-8 text-sm opacity-60">
+                    <div>© 2026 Greenfit Bienestar. Todos los derechos reservados.</div>
+                    <div class="flex gap-8">
+                        <a href="#" class="hover:underline">Privacidad</a>
+                        <a href="#" class="hover:underline">LinkedIn</a>
+                        <a href="#" class="hover:underline">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script para animaciones y Lucide -->
+    <script>
+        // Inicializar Iconos
+        lucide.createIcons();
+
+        // Intersection Observer para efectos de Fade-in-up
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Suavizar scroll de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
