@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,8 +64,8 @@
     <!-- 1. HEADER -->
     <header class="fixed top-0 w-full z-[100] glass-header border-b border-forest/5">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-serif text-xl font-bold tracking-tight z-[110]">
-                Greenfit Bienestar
+            <a href="#" class="z-[110] flex items-center gap-3">
+                <img src="image/logo.png" alt="Greenfit Bienestar Logo" class="h-10 md:h-14 w-auto object-contain">
             </a>
             
             <div class="hidden md:flex items-center gap-8">
@@ -105,14 +105,14 @@
                 </div>
             </div>
 
-            <div class="relative z-10 max-w-4xl mx-auto text-center reveal">
+            <div class="relative z-10 max-w-4xl mx-auto text-center reveal mt-20">
                 <span class="inline-block uppercase tracking-[0.4em] text-[10px] md:text-xs mb-8 font-semibold opacity-60">Bienestar que impulsa el rendimiento</span>
                 <h1 class="font-serif text-6xl md:text-9xl mb-10 leading-[0.9] tracking-tighter">
                     Pausa. <br> Respira. <br>
                     <span class="italic font-light text-forest/40">Rinde.</span>
                 </h1>
-                <p class="max-w-xl mx-auto text-base md:text-lg text-forest/70 font-light leading-relaxed mb-12 px-4">
-                    Transformamos el estrés laboral en energía productiva. Optimización humana para empresas de alto rendimiento.
+                <p class="max-w-3xl mx-auto text-xl md:text-3xl text-forest/90 leading-relaxed mb-12 px-4 font-[Dancing_Script]">
+                    Transformamos estrés laboral en Bienestar y energía. Desarrolla habilidades de alto impacto para empresas de alto rendimiento.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="#servicios" class="group relative overflow-hidden bg-forest text-cream px-10 py-5 rounded-full text-xs uppercase tracking-[0.2em] transition-all">
@@ -141,43 +141,94 @@
             <!-- Flexbox centrado para manejar las 5 tarjetas con equilibrio visual -->
             <div class="flex flex-wrap justify-center gap-6">
                 <!-- Card 1 -->
-                <div class="reveal bg-sage/40 p-10 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]">
-                    <i data-lucide="zap" class="w-6 h-6 mb-16 opacity-40 text-forest"></i>
-                    <h4 class="font-serif text-2xl mb-4">Pausas de Activación</h4>
-                    <p class="text-sm leading-relaxed text-forest/70 font-light">Integración de Ejercicios psicomotrices para revitalizar el cuerpo y bajar el cortisol en minutos.</p>
+                <div class="reveal bg-sage/40 p-8 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] flex flex-col">
+                    <div class="w-full h-48 rounded-2xl mb-6 bg-forest/5 flex-shrink-0 flex items-center justify-center">
+                        <i data-lucide="armchair" class="w-12 h-12 opacity-40 text-forest"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-4">Masaje en silla</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light mt-auto">Experiencia de relajación profunda, aliviando tensiones musculares y reduciendo el estrés en el lugar de trabajo.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="reveal bg-sage/40 p-10 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]" style="transition-delay: 100ms;">
-                    <i data-lucide="wind" class="w-6 h-6 mb-16 opacity-40 text-forest"></i>
-                    <h4 class="font-serif text-2xl mb-4">Mindfulness</h4>
-                    <p class="text-sm leading-relaxed text-forest/70 font-light">Herramientas de respiración y cuencos tibetanos para disipar la ansiedad laboral.</p>
+                <div class="reveal bg-sage/40 p-8 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] flex flex-col" style="transition-delay: 100ms;">
+                    <div class="w-full h-48 rounded-2xl mb-6 bg-forest/5 flex-shrink-0 flex items-center justify-center">
+                        <i data-lucide="zap" class="w-12 h-12 opacity-40 text-forest"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-4">Gimnasia de neuro activación</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light mt-auto">Ejercicios psicomotrices diseñados para revitalizar el cuerpo y optimizar las funciones cognitivas rápidamente.</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="reveal bg-sage/40 p-10 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]" style="transition-delay: 200ms;">
-                    <i data-lucide="sun" class="w-6 h-6 mb-16 opacity-40 text-forest"></i>
-                    <h4 class="font-serif text-2xl mb-4">Jornadas Inmersivas</h4>
-                    <p class="text-sm leading-relaxed text-forest/70 font-light">Experiencias de media jornada con yoga, grounding y nutrición consciente.</p>
+                <div class="reveal bg-sage/40 p-8 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] flex flex-col" style="transition-delay: 200ms;">
+                    <div class="w-full h-48 rounded-2xl mb-6 bg-forest/5 flex-shrink-0 flex items-center justify-center">
+                        <i data-lucide="wind" class="w-12 h-12 opacity-40 text-forest"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-4">Mindfulness y Sonoterapia</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light mt-auto">Herramientas de atención plena y vibraciones armónicas para equilibrar la mente y disipar la ansiedad laboral.</p>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="reveal bg-sage/40 p-10 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]" style="transition-delay: 300ms;">
-                    <i data-lucide="brain" class="w-6 h-6 mb-16 opacity-40 text-forest"></i>
-                    <h4 class="font-serif text-2xl mb-4">Neuroliderazgo</h4>
-                    <p class="text-sm leading-relaxed text-forest/70 font-light">Charlas de psicología positiva aplicadas a la alta dirección y equipos.</p>
+                <div class="reveal bg-sage/40 p-8 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] flex flex-col" style="transition-delay: 300ms;">
+                    <div class="w-full h-48 rounded-2xl mb-6 bg-forest/5 flex-shrink-0 flex items-center justify-center">
+                        <i data-lucide="sun" class="w-12 h-12 opacity-40 text-forest"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-4">Jornadas de inmersión</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light mt-auto">Experiencias de profunda conexión con el bienestar a través de prácticas integrales para el equipo completo.</p>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="reveal bg-sage/40 p-10 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]" style="transition-delay: 400ms;">
-                    <i data-lucide="armchair" class="w-6 h-6 mb-16 opacity-40 text-forest"></i>
-                    <h4 class="font-serif text-2xl mb-4">Masajes en silla</h4>
-                    <p class="text-sm leading-relaxed text-forest/70 font-light">Mezcla de Shiatsu y relajación, terminando con la vibración de cuencos tibetanos.</p>
+                <div class="reveal bg-sage/40 p-8 rounded-[2.5rem] hover:bg-sage transition-all duration-700 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] flex flex-col" style="transition-delay: 400ms;">
+                    <div class="w-full h-48 rounded-2xl mb-6 bg-forest/5 flex-shrink-0 flex items-center justify-center">
+                        <i data-lucide="brain" class="w-12 h-12 opacity-40 text-forest"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-4">Liderazgo y autocuidado</h4>
+                    <p class="text-sm leading-relaxed text-forest/70 font-light mt-auto">Estrategias de bienestar aplicadas al desempeño directivo para inspirar y liderar equipos saludables.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 5. NOSOTROS (Fundadores - Reemplaza Proceso) -->
+        <!-- 5. IMPACTO Y MÉTRICAS -->
+        <section id="impacto" class="py-24 bg-sage text-forest border-y border-forest/10">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-forest/20">
+                    <div class="reveal px-4 py-8 md:p-8">
+                        <div class="text-6xl md:text-8xl font-[Dancing_Script] mb-4 text-forest/90">+1000</div>
+                        <div class="text-sm md:text-lg uppercase tracking-[0.2em] font-medium text-forest/80">Personas Beneficiadas</div>
+                    </div>
+                    <div class="reveal px-4 py-8 md:p-8" style="transition-delay: 200ms;">
+                        <div class="text-6xl md:text-8xl font-[Dancing_Script] mb-4 text-forest/90">+6</div>
+                        <div class="text-sm md:text-lg uppercase tracking-[0.2em] font-medium text-forest/80">Empresas han creído en nosotros</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. EXPERIENCIA Y TESTIMONIOS -->
+        <section id="testimonios" class="py-32 px-6 bg-cream">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20 reveal">
+                    <h3 class="font-serif text-4xl md:text-5xl mb-4 text-forest">La Experiencia Greenfit</h3>
+                    <p class="text-forest/60 font-light text-lg">Descubre lo que dicen quienes ya han vivido nuestros servicios y revive nuestras intervenciones.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 justify-center items-center">
+                    <!-- Video 1 (Experiencia/Testimonio) -->
+                    <div class="reveal group relative rounded-[2.5rem] overflow-hidden aspect-[9/16] bg-forest/5 shadow-2xl mx-auto w-full max-w-[320px]">
+                        <video src="videos/VID_20260225_125057.mp4" class="w-full h-full object-cover" controls preload="metadata"></video>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="reveal group relative rounded-[2.5rem] overflow-hidden aspect-[9/16] bg-forest/5 shadow-2xl mx-auto w-full max-w-[320px]" style="transition-delay: 150ms;">
+                        <video src="videos/VID_20260225_130853.mp4" class="w-full h-full object-cover" controls preload="metadata"></video>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="reveal group relative rounded-[2.5rem] overflow-hidden aspect-[9/16] bg-forest/5 shadow-2xl mx-auto w-full max-w-[320px]" style="transition-delay: 300ms;">
+                        <video src="videos/VID_20260225_134316.mp4" class="w-full h-full object-cover" controls preload="metadata"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. NOSOTROS (Fundadores - Reemplaza Proceso) -->
         <section id="fundadores" class="py-32 bg-forest text-cream">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="text-center mb-16 reveal">
@@ -188,8 +239,8 @@
                     <!-- Imagen de Fundadores -->
                     <div class="reveal">
                         <div class="aspect-[4/5] bg-sage/10 rounded-[3rem] overflow-hidden border border-white/10 relative group">
-                            <!-- REEMPLAZAR 'fundadores.jpg' CON TU IMAGEN REAL -->
-                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" 
+                            <!-- Imagen real -->
+                            <img src="image/cofundadores.jpeg" 
                                  alt="Rocío Abarca y Gonzalo Yávar" 
                                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
                             <div class="absolute inset-0 bg-forest/20 mix-blend-multiply"></div>
@@ -198,11 +249,12 @@
 
                     <!-- Texto de Fundadores -->
                     <div class="reveal space-y-8" style="transition-delay: 200ms;">
-                        <p class="text-xl md:text-2xl font-serif italic text-sage leading-relaxed">
-                            Cofundadores de Greenfit Bienestar, somos Rocío Abarca y Gonzalo Yávar, ambos profesores de Educación Física, masoterapeutas, especializados en el trabajo corporal.
+                        <h4 class="text-2xl md:text-3xl font-serif text-sage mb-6">Cofundadores de Greenfit Bienestar Laboral.</h4>
+                        <p class="text-cream/90 leading-relaxed font-light text-lg">
+                            Somos <span class="font-semibold text-white">Rocío Abarca</span>, Profesora, Coach, masoterapeuta y especialista en educación emocional.
                         </p>
-                        <p class="text-cream/70 leading-relaxed font-light">
-                            Soñamos en plantar semillas del Bienestar en las personas y organizaciones que decidan invertir en ellas, para armar mejores comunidades y ambientes laborales.
+                        <p class="text-cream/90 leading-relaxed font-light text-lg">
+                            <span class="font-semibold text-white">Gonzalo Yavar</span>, profesor de movimiento entrenador de IAFF, masoterapeuta y entrenador de alto rendimiento humano.
                         </p>
                         <div class="pt-8 border-t border-white/10">
                             <p class="text-lg text-sage/90 font-light italic">
@@ -227,9 +279,9 @@
 
                 <div class="mt-40 flex flex-col md:flex-row justify-between items-center gap-12 pt-12 border-t border-forest/5 opacity-60 text-[10px] uppercase tracking-[0.3em] font-bold">
                     <div>© 2026 Greenfit Bienestar</div>
-                    <div class="flex gap-8">
+                    <div class="flex flex-wrap justify-center gap-8 mt-6 md:mt-0">
+                        <a href="https://www.linkedin.com" target="_blank" class="hover:text-forest transition-colors">LinkedIn</a>
                         <a href="https://www.instagram.com/greenfit_bienestar/" target="_blank" class="hover:text-forest transition-colors">Instagram</a>
-                        <a href="#" class="hover:text-forest transition-colors">Privacidad</a>
                     </div>
                 </div>
             </div>
